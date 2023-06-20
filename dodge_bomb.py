@@ -13,6 +13,9 @@ def main():
     kk_img = pg.transform.rotozoom(kk_img, 0, 2.0)
     clock = pg.time.Clock()
     tmr = 0
+    enn = pg.surface((20,20))
+    pg.draw.circle(enn, (255, 0, 0), (10, 10), 10)
+    enn.set_colorkey((0, 0, 0))
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: 
@@ -23,6 +26,8 @@ def main():
         pg.display.update()
         tmr += 1
         clock.tick(10)
+    
+
 
 
 if __name__ == "__main__":
