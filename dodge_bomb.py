@@ -88,7 +88,7 @@ def main():
             vy *= -1
         avx, avy = vx*accs[min(tmr // 500, 9)], vy*accs[min(tmr//500, 9)] #追加機能2
         bd_rct.move_ip(avx, avy)
-        bd_img = bd_imgs[min(tmr//500,9)] #追加機能2
+        bd_img = bd_imgs[min(tmr//500, 9)] #追加機能2
         screen.blit(bd_img, bd_rct)
         pg.display.update()
         tmr += 1
