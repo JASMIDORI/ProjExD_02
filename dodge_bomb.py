@@ -44,10 +44,10 @@ def main():
     y = random.randint(0, HEIGHT)
     bd_rct = bd_img.get_rect()
     #爆弾surface(bg_img)を爆弾Rect(bd_rct)から抽出
-    bd_rct.center = x,y  #爆弾の中心座標を連数で指定
+    bd_rct.center = x, y  #爆弾の中心座標を連数で指定
     vx, vy = +5, +5 #爆弾の移動速度
 
-    accs = [a for a in range(1,11)]  #追加機能2、加速のリスト
+    accs = [a for a in range(1, 11)]  #追加機能2、加速のリスト
     
     for r in range(1, 11):
         bd_img = pg.Surface((20*r, 20*r))
