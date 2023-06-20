@@ -12,21 +12,6 @@ Moving ={
     pg.K_RIGHT: (+5, 0),
 }
 
-#Change ={
-#    pg.a:(0, -5),
-#    pg.b:(+5, -5),
-#    pg.c:(+5, 0),
-#    pg.d:(+5, +5),
-#    pg.e:(0, +5),
-#    pg.f:(-5, +5),
-#    pg.g:(-5, 0),
-#    pg.h:(-5, -5),
-
-#} #追加機能1 
-
-
-
-
 def check_bound(rect: pg.Rect) -> tuple[bool, bool]:
     #こうかとんRect，爆弾Rectが画面外 or 画面内かを判定する関数
     #引数：こうかとんRect or 爆弾Rect
