@@ -20,6 +20,7 @@ def main():
     y = random.randint(0, HEIGHT)
     bd_rct = bg_img.get_rect()
     #爆弾surface(bg_img)爆弾Rect(bd_rct)から抽出
+    vx, vy = +5, +5
 
     bd_rct.center = x,y #爆弾Rectの中心座標
 
@@ -34,6 +35,7 @@ def main():
         
         screen.blit(bg_img, [0, 0])
         screen.blit(kk_img, [900, 400])
+        bd_rct(vx, vy)
         screen.blit(bd_img, bd_rct)
         pg.display.update()
         tmr += 1
